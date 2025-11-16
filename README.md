@@ -1,7 +1,6 @@
 # 🛡️ Vaccine - Advanced SQL Injection Scanner
 
 ![42 Score](https://img.shields.io/badge/Score-125%2F100-success?style=for-the-badge&logo=42)
-![School](https://img.shields.io/badge/School-42%20Beirut-000000?style=for-the-badge&logo=42)
 ![Language](https://img.shields.io/badge/Language-Java-orange?style=for-the-badge&logo=openjdk)
 ![Security](https://img.shields.io/badge/Type-Cybersecurity-red?style=for-the-badge&logo=security)
 ![SQL Injection](https://img.shields.io/badge/Focus-SQL%20Injection-blue?style=for-the-badge&logo=database)
