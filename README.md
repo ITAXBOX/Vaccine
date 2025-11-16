@@ -1,6 +1,10 @@
 # 🛡️ Vaccine - Advanced SQL Injection Scanner
 
-**Cybersecurity Piscine - Final Project**
+![42 Score](https://img.shields.io/badge/Score-125%2F100-success?style=for-the-badge&logo=42)
+![School](https://img.shields.io/badge/School-42%20Beirut-000000?style=for-the-badge&logo=42)
+![Language](https://img.shields.io/badge/Language-Java-orange?style=for-the-badge&logo=openjdk)
+![Security](https://img.shields.io/badge/Type-Cybersecurity-red?style=for-the-badge&logo=security)
+![SQL Injection](https://img.shields.io/badge/Focus-SQL%20Injection-blue?style=for-the-badge&logo=database)
 
 Vaccine is a powerful, enterprise-grade SQL injection vulnerability scanner built with a focus on **clean architecture**, **design patterns**, and **SOLID principles**. This project demonstrates professional-level software engineering applied to cybersecurity tooling.
 
@@ -8,7 +12,7 @@ Vaccine is a powerful, enterprise-grade SQL injection vulnerability scanner buil
 
 ## 🎯 Project Overview
 
-Vaccine is not just another SQL injection scanner—it's a **carefully architected security tool** that showcases:
+Vaccine is not just another SQL injection scanner-it's a **carefully architected security tool** that showcases:
 
 - ✅ **Multiple Detection Strategies**: Error-based, Union-based, Boolean-based, and Time-based injection detection
 - ✅ **DBMS Fingerprinting**: Intelligent database detection and dialect-specific payload generation
@@ -70,7 +74,7 @@ Vaccine employs **four distinct injection strategies**, each designed to detect 
 
 ### DBMS Fingerprinting Engine
 
-Vaccine doesn't just test for vulnerabilities—it **intelligently identifies** the target database:
+Vaccine doesn't just test for vulnerabilities-it **intelligently identifies** the target database:
 
 - MySQL
 - PostgreSQL
@@ -152,42 +156,6 @@ The `InjectionStrategyProvider` manages strategy instances:
 
 ---
 
-### SOLID Principles in Action
-
-#### **S - Single Responsibility Principle**
-Each class has **one clear purpose**:
-- `ScanEngine`: Orchestrates the scanning process
-- `DbmsFingerprintingService`: Detects database types
-- `EnumerationService`: Extracts database information
-- `HttpClient`: Handles HTTP communications
-- `StorageManager`: Manages result persistence
-
-#### **O - Open/Closed Principle**
-The system is **open for extension, closed for modification**:
-- Adding a new injection strategy doesn't require changing existing code
-- New DBMS dialects can be added without modifying the factory
-- The enumeration system can be extended with new techniques
-
-#### **L - Liskov Substitution Principle**
-All strategy implementations are **perfectly interchangeable**:
-- Any `InjectionStrategy` can be used wherever the interface is expected
-- All dialects implement `DbmsDialect` consistently
-- HTTP client implementations are substitutable
-
-#### **I - Interface Segregation Principle**
-Interfaces are **focused and specific**:
-- `InjectionStrategy`: Only requires `getName()` and `isVulnerable()`
-- `HttpClient`: Minimal surface area for HTTP operations
-- `DbmsDialect`: Only DBMS-specific operations
-
-#### **D - Dependency Inversion Principle**
-High-level modules depend on **abstractions, not concretions**:
-- `ScanEngine` depends on `InjectionStrategy` interface, not concrete strategies
-- `ScanContext` uses `HttpClient` interface, not `SimpleHttpClient`
-- Strategies depend on `DbmsDialect` interface, not specific dialects
-
----
-
 ## 🧩 Project Structure
 
 ```
@@ -205,28 +173,6 @@ src/com/vaccine/
 ├── model/            # Domain models (Target, Vulnerability, etc.)
 └── util/             # Utilities and storage
 ```
-
----
-
-## 🎓 Technical Highlights
-
-### 1. **Clean Separation of Concerns**
-Each package has a clear responsibility, making the codebase highly maintainable.
-
-### 2. **Dependency Injection**
-Dependencies are injected through constructors, enabling:
-- Easy testing with mock objects
-- Flexible configuration
-- Reduced coupling
-
-### 3. **Immutability & Encapsulation**
-Domain models like `Target`, `Parameter`, and `Vulnerability` are designed to be immutable where appropriate.
-
-### 4. **Context Object Pattern**
-The `ScanContext` carries shared state across the scanning process, avoiding global variables and parameter proliferation.
-
-### 5. **Optional Pattern**
-Uses `Optional<Vulnerability>` to handle presence/absence of vulnerabilities safely, avoiding null pointer exceptions.
 
 ---
 
@@ -331,7 +277,7 @@ Educational project for **42 Beirut - Cybersecurity Piscine**.
 
 ## 🎯 Conclusion
 
-Vaccine is more than a SQL injection scanner—it's a **showcase of software craftsmanship** applied to cybersecurity. Every line of code reflects careful consideration of design principles, maintainability, and extensibility. This project proves that security tools can and should be built with the same rigor as any enterprise application.
+Vaccine is more than a SQL injection scanner-it's a **showcase of software craftsmanship** applied to cybersecurity. Every line of code reflects careful consideration of design principles, maintainability, and extensibility. This project proves that security tools can and should be built with the same rigor as any enterprise application.
 
 **Built with precision. Designed for power. Crafted for security.**
 
