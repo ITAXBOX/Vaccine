@@ -247,11 +247,6 @@ make run      # Build and run with default settings
 ./vaccine -o custom_report.txt "http://testphp.vulnweb.com/artists.php?artist=1"
 ```
 
-### Help
-```bash
-./vaccine --help
-```
-
 ---
 
 ## 📚 Learning Outcomes
